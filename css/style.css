@@ -1,0 +1,275 @@
+/* 
+Nama        : NAMA ANDA
+NIM         : NIM ANDA
+Kelas       : IF201
+Mata Kuliah : Pemrograman Web 1
+Project     : Trip to Flores
+*/
+
+
+/* Pengaturan dasar halaman */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f8f7;
+    color: #333333;
+}
+
+
+/* Header */
+header {
+    background-color: #0b6e69;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+
+header p {
+    font-size: 18px;
+}
+
+
+/* Navigasi */
+nav {
+    background-color: #064e4a;
+    text-align: center;
+    padding: 15px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Konten utama */
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+
+/* Judul section */
+section {
+    margin-bottom: 40px;
+}
+
+
+section h2 {
+    text-align: center;
+    color: #0b6e69;
+    font-size: 30px;
+}
+
+
+/* Kartu destinasi */
+article {
+    background-color: white;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.10);
+}
+
+
+article h3 {
+    color: #0b6e69;
+    font-size: 24px;
+}
+
+
+article p {
+    line-height: 1.7;
+}
+
+
+/* Tombol lihat destinasi */
+article a {
+    display: inline-block;
+    background-color: #0b6e69;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+article a:hover {
+    background-color: #064e4a;
+}
+
+
+/* List */
+ul,
+ol {
+    line-height: 2;
+}
+
+
+/* Footer */
+footer {
+    background-color: #064e4a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+/* Gambar destinasi */
+article img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* =========================
+   HALAMAN DETAIL DESTINASI
+   ========================= */
+
+
+/* Gambar utama halaman detail */
+
+.detail-image {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+/* Video */
+
+.detail-video {
+    width: 100%;
+    max-width: 900px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+
+/* Gambar galeri */
+
+.gallery-image {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* Caption gambar */
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+
+/* Tabel */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+
+th,
+td {
+    border: 1px solid #cccccc;
+    padding: 12px;
+    text-align: left;
+}
+
+
+th {
+    background-color: #0b6e69;
+    color: white;
+}
+
+
+/* Form */
+
+form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.10);
+}
+
+
+input,
+select,
+textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+input[type="submit"] {
+    width: auto;
+    background-color: #0b6e69;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+input[type="submit"]:hover {
+    background-color: #064e4a;
+}
+
+/* GALERI 2 x 2 */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.gallery-grid figure {
+    margin: 0;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+.gallery-grid figcaption {
+    text-align: center;
+    margin-top: 8px;
+    font-style: italic;
+}
