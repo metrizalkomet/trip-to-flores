@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Booking Pemandu - Trip to Flores</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+    <!--
+    Nama        : NAMA ANDA
+    NIM         : NIM ANDA
+    Kelas       : IF201
+    Mata Kuliah : Pemrograman Web 1
+    Project     : Trip to Flores
+    -->
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <h1>Booking Pemandu Perjalanan</h1>
+
+        <p>
+            <strong>Trip to Flores</strong>
+        </p>
+
+        <p>
+            Rencanakan perjalanan Anda bersama
+            pemandu wisata lokal.
+        </p>
+
+    </header>
+
+
+    <!-- NAVIGASI -->
+
+    <nav>
+
+        <a href="index.html">Home</a> |
+        <a href="index.html#destinasi">Destinasi</a> |
+        <a href="index.html#tentang">Tentang Flores</a> |
+        <a href="booking.html">Booking Pemandu</a>
+
+    </nav>
+
+
+    <!-- KONTEN -->
+
+    <main>
+
+        <section>
+
+            <h2>Form Booking Pemandu</h2>
+
+            <p>
+                Silakan lengkapi formulir berikut untuk
+                mengajukan booking pemandu perjalanan
+                di Flores.
+            </p>
+
+
+            <form onsubmit="return prosesBooking()">
+
+
+                <!-- NAMA -->
+
+                <p>
+
+                    <label for="nama">
+                        Nama Lengkap:
+                    </label>
+
+                    <br>
+
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap">
+
+                </p>
+
+
+                <!-- WHATSAPP -->
+
+                <p>
+
+                    <label for="telepon">
+                        Nomor WhatsApp:
+                    </label>
+
+                    <br>
+
+                    <input type="tel" id="telepon" name="telepon" placeholder="08xxxxxxxxxx">
+
+                </p>
+
+
+                <!-- EMAIL -->
+
+                <p>
+
+                    <label for="email">
+                        Email:
+                    </label>
+
+                    <br>
+
+                    <input type="email" id="email" name="email" placeholder="contoh@email.com">
+
+                </p>
+
+
+                <!-- DESTINASI -->
+
+                <p>
+
+                    <label for="destinasi">
+                        Pilih Destinasi:
+                    </label>
+
+                    <br>
+
+                    <select id="destinasi" name="destinasi">
+
+                        <option value="">
+                            -- Pilih Destinasi --
+                        </option>
+
+                        <option value="labuan-bajo">
+                            Labuan Bajo
+                        </option>
+
+                        <option value="komodo">
+                            Taman Nasional Komodo
+                        </option>
+
+                        <option value="kelimutu">
+                            Danau Kelimutu
+                        </option>
+
+                        <option value="wae-rebo">
+                            Wae Rebo
+                        </option>
+
+                        <option value="pantai-koka">
+                            Pantai Koka
+                        </option>
+
+                    </select>
+
+                </p>
+
+
+                <!-- TANGGAL -->
+
+                <p>
+
+                    <label for="tanggal">
+                        Tanggal Perjalanan:
+                    </label>
+
+                    <br>
+
+                    <input type="date" id="tanggal" name="tanggal">
+
+                </p>
+
+
+                <!-- JUMLAH PESERTA -->
+
+                <p>
+
+                    <label for="peserta">
+                        Jumlah Peserta:
+                    </label>
+
+                    <br>
+
+                    <input type="number" id="peserta" name="peserta" min="1" placeholder="Jumlah peserta">
+
+                </p>
+
+
+                <!-- PAKET -->
+
+                <p>
+
+                    <label for="paket">
+                        Pilih Paket Pemandu:
+                    </label>
+
+                    <br>
+
+                    <select id="paket" name="paket">
+
+                        <option value="">
+                            -- Pilih Paket --
+                        </option>
+
+                        <option value="hemat">
+                            Paket Hemat
+                        </option>
+
+                        <option value="standard">
+                            Paket Standard
+                        </option>
+
+                        <option value="premium">
+                            Paket Premium
+                        </option>
+
+                    </select>
+
+                </p>
+
+
+                <!-- PESAN -->
+
+                <p>
+
+                    <label for="pesan">
+                        Pesan Tambahan:
+                    </label>
+
+                    <br>
+
+                    <textarea id="pesan" name="pesan" rows="6" cols="40"
+                        placeholder="Tuliskan kebutuhan atau pertanyaan Anda..."></textarea>
+
+                </p>
+
+
+                <!-- TOMBOL -->
+
+                <p>
+
+                    <input type="submit" value="Kirim Booking">
+
+                    <input type="reset" value="Reset">
+
+                </p>
+
+
+            </form>
+
+        </section>
+
+
+        <!-- INFORMASI -->
+
+        <section>
+
+            <h2>Destinasi yang Tersedia</h2>
+
+            <ul>
+
+                <li>Labuan Bajo</li>
+
+                <li>Taman Nasional Komodo</li>
+
+                <li>Danau Kelimutu</li>
+
+                <li>Wae Rebo</li>
+
+                <li>Pantai Koka</li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- KEMBALI -->
+
+        <section>
+
+            <p>
+
+                <a href="index.html">
+                    ← Kembali ke Halaman Utama
+                </a>
+
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 Trip to Flores
+        </p>
+
+        <p>
+            Website Pariwisata Flores -
+            Pemrograman Web 1
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

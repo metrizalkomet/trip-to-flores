@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Wae Rebo - Trip to Flores</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+    <!--
+    Nama        : METRIZAL
+    NIM         : 250401020031
+    Kelas       : IF201
+    Mata Kuliah : Pemrograman Web 1
+    Project     : Trip to Flores
+    -->
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <h1>Wae Rebo</h1>
+
+        <p>
+            <strong>Destinasi Wisata Budaya Flores</strong>
+        </p>
+
+        <p>
+            Jelajahi keindahan alam dan budaya
+            Desa Wae Rebo.
+        </p>
+
+    </header>
+
+
+    <!-- NAVIGASI -->
+
+    <nav>
+
+        <a href="index.html">Home</a> |
+        <a href="index.html#destinasi">Destinasi</a> |
+        <a href="index.html#tentang">Tentang Saya</a> |
+        <a href="booking.html">Booking Pemandu</a>
+
+    </nav>
+
+
+    <!-- KONTEN UTAMA -->
+
+    <main>
+
+
+        <!-- TENTANG WAE REBO -->
+
+        <section>
+
+            <h2>Tentang Wae Rebo</h2>
+
+            <img src="image/wae-rebo.jpg" alt="Desa Wae Rebo" class="detail-image">
+
+            <p>
+                <strong>Wae Rebo</strong> merupakan salah satu
+                desa wisata yang terkenal dengan keindahan alam
+                dan budaya tradisionalnya.
+            </p>
+
+            <p>
+                Desa ini menawarkan pengalaman wisata yang
+                menarik bagi pengunjung yang ingin menikmati
+                suasana alam sekaligus mengenal kehidupan
+                masyarakat dan budaya lokal.
+            </p>
+
+        </section>
+
+
+        <!-- VIDEO -->
+
+        <section>
+
+            <h2>Video Wae Rebo</h2>
+
+            <video class="detail-video" controls>
+
+                <source src="video/wae-rebo.mp4" type="video/mp4">
+
+                Browser Anda tidak mendukung video HTML5.
+
+            </video>
+
+            <p>
+                Video menampilkan suasana perjalanan
+                wisata menuju Desa Wae Rebo.
+            </p>
+
+        </section>
+
+
+        <!-- GALERI -->
+
+        <section>
+
+            <h2>Galeri Wae Rebo</h2>
+
+            <div class="gallery-grid">
+
+                <figure>
+
+                    <img src="image/wae-rebo.jpg" alt="Pemandangan Desa Wae Rebo">
+
+                    <figcaption>
+                        Pemandangan Desa Wae Rebo
+                    </figcaption>
+
+                </figure>
+
+
+                <figure>
+
+                    <img src="image/wae-rebo-2.jpg" alt="Rumah adat Wae Rebo">
+
+                    <figcaption>
+                        Rumah adat Wae Rebo
+                    </figcaption>
+
+                </figure>
+
+
+                <figure>
+
+                    <img src="image/wae-rebo-3.jpg" alt="Pemandangan alam Wae Rebo">
+
+                    <figcaption>
+                        Pemandangan alam Wae Rebo
+                    </figcaption>
+
+                </figure>
+
+
+                <figure>
+
+                    <img src="image/wae-rebo-4.jpg" alt="Desa Wae Rebo dari ketinggian">
+
+                    <figcaption>
+                        Desa Wae Rebo dari ketinggian
+                    </figcaption>
+
+                </figure>
+
+            </div>
+
+        </section>
+
+
+        <!-- INFORMASI WISATA -->
+
+        <section>
+
+            <h2>Informasi Wisata</h2>
+
+            <table>
+
+                <tr>
+                    <th>Informasi</th>
+                    <th>Keterangan</th>
+                </tr>
+
+                <tr>
+                    <td>Destinasi</td>
+                    <td>Wae Rebo</td>
+                </tr>
+
+                <tr>
+                    <td>Jenis Wisata</td>
+                    <td>Wisata Alam dan Budaya</td>
+                </tr>
+
+                <tr>
+                    <td>Lokasi</td>
+                    <td>Flores, Nusa Tenggara Timur</td>
+                </tr>
+
+                <tr>
+                    <td>Aktivitas</td>
+                    <td>Wisata Budaya dan Fotografi</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+
+        <!-- AKTIVITAS -->
+
+        <section>
+
+            <h2>Aktivitas Wisata</h2>
+
+            <ol>
+
+                <li>Menikmati pemandangan alam.</li>
+
+                <li>Mengenal budaya masyarakat setempat.</li>
+
+                <li>Melihat rumah adat tradisional.</li>
+
+                <li>Mengabadikan perjalanan dengan fotografi.</li>
+
+                <li>Menggunakan jasa pemandu perjalanan.</li>
+
+            </ol>
+
+        </section>
+
+
+        <!-- AUDIO -->
+
+        <section>
+
+            <h2>Audio Trip to Flores</h2>
+
+            <audio controls>
+
+                <source src="audio/flores.mp3" type="audio/mpeg">
+
+                Browser Anda tidak mendukung audio HTML5.
+
+            </audio>
+
+        </section>
+
+
+        <!-- BOOKING -->
+
+        <section>
+
+            <h2>Booking Pemandu Perjalanan</h2>
+
+            <p>
+                Ingin menjelajahi Wae Rebo bersama pemandu?
+                Silakan mengisi formulir booking berikut.
+            </p>
+
+            <form onsubmit="return prosesBooking()">
+
+                <p>
+
+                    <label for="nama">
+                        Nama Lengkap:
+                    </label>
+
+                    <br>
+
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda">
+
+                </p>
+
+
+                <p>
+
+                    <label for="telepon">
+                        Nomor WhatsApp:
+                    </label>
+
+                    <br>
+
+                    <input type="tel" id="telepon" name="telepon" placeholder="08xxxxxxxxxx">
+
+                </p>
+
+
+                <p>
+
+                    <label for="tanggal">
+                        Tanggal Perjalanan:
+                    </label>
+
+                    <br>
+
+                    <input type="date" id="tanggal" name="tanggal">
+
+                </p>
+
+
+                <p>
+
+                    <label for="peserta">
+                        Jumlah Peserta:
+                    </label>
+
+                    <br>
+
+                    <input type="number" id="peserta" name="peserta" min="1" placeholder="Jumlah peserta">
+
+                </p>
+
+
+                <p>
+
+                    <label for="paket">
+                        Pilih Paket Pemandu:
+                    </label>
+
+                    <br>
+
+                    <select id="paket" name="paket">
+
+                        <option value="">
+                            -- Pilih Paket --
+                        </option>
+
+                        <option value="hemat">
+                            Paket Hemat
+                        </option>
+
+                        <option value="standard">
+                            Paket Standard
+                        </option>
+
+                        <option value="premium">
+                            Paket Premium
+                        </option>
+
+                    </select>
+
+                </p>
+
+
+                <p>
+
+                    <label for="pesan">
+                        Pesan Tambahan:
+                    </label>
+
+                    <br>
+
+                    <textarea id="pesan" name="pesan" rows="5" cols="40"
+                        placeholder="Tuliskan kebutuhan Anda..."></textarea>
+
+                </p>
+
+
+                <p>
+
+                    <input type="submit" value="Booking Sekarang">
+
+                </p>
+
+            </form>
+
+        </section>
+
+
+        <!-- KEMBALI -->
+
+        <section>
+
+            <p>
+
+                <a href="index.html">
+                    ← Kembali ke Halaman Utama
+                </a>
+
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 Trip to Flores
+        </p>
+
+        <p>
+            Website Pariwisata Flores -
+            Pemrograman Web 1
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
